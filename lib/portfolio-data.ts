@@ -17,7 +17,7 @@ import {
     TbFaceId,
     TbPill,
     TbMessageChatbot,
-    TbMoodWink,
+    TbMoodSmile ,
     TbMail,
     TbSettings,
     TbLanguage,
@@ -51,7 +51,7 @@ export const portfolioData: Category[] = [
   {
     id: "profile",
     label: { es: "Perfil", en: "Profile" },
-    icon: TbMoodWink,
+    icon: TbMoodSmile,
     items: [
       {
         id: "about",
