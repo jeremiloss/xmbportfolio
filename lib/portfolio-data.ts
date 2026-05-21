@@ -244,7 +244,7 @@ export const portfolioData: Category[] = [
         id: "twitter",
         label: { es: "X/Twitter", en: "X/Twitter" },
         icon: TbBrandTwitter,
-        url: "https://www.instagram.com/jereeedisenia/",
+        url: "https://x.com/jereemilos",
         description: { es: "Seguime en X.", en: "Follow me on X." },
       },
     ],
