@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, PanInfo } from "framer-motion"
 import { portfolioData } from "@/lib/portfolio-data"
 import { XMBIcon } from "./xmb-icon"
 import { XMBItem } from "./xmb-item"
@@ -9,6 +9,7 @@ import { DetailPanel } from "./detail-panel"
 
 const ITEM_HEIGHT = 86
 const CATEGORY_SPACING = 100
+const SWIPE_THRESHOLD = 50 // Minimum swipe distance to trigger navigation
 
 
 interface XMBNavigationProps {
@@ -25,6 +26,7 @@ export function XMBNavigation({ lang, onLanguageChange, onColorChange }: XMBNavi
   const [isPanelOpen, setIsPanelOpen] = useState(false)
   const [notification, setNotification] = useState<string | null>(null)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const swipeRef = useRef({ startX: 0, startY: 0, handled: false })
   const currentCategory = portfolioData[categoryIndex]
   const currentItemIndex = itemIndices[categoryIndex]
   const currentItem = currentCategory.items[currentItemIndex]
@@ -84,6 +86,58 @@ export function XMBNavigation({ lang, onLanguageChange, onColorChange }: XMBNavi
   const closePanel = useCallback(() => {
     setIsPanelOpen(false)
   }, [])
+
+  // Touch/Swipe handlers for mobile navigation
+  const handlePanEnd = useCallback(
+    (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+      if (isPanelOpen) return // Don't navigate when panel is open
+
+      const { offset, velocity } = info
+      const swipeX = offset.x
+      const swipeY = offset.y
+      const velocityX = velocity.x
+      const velocityY = velocity.y
+
+      // Determine if this is primarily a horizontal or vertical swipe
+      const isHorizontal = Math.abs(swipeX) > Math.abs(swipeY)
+
+      if (isHorizontal) {
+        // Horizontal swipe - navigate categories
+        if (Math.abs(swipeX) > SWIPE_THRESHOLD || Math.abs(velocityX) > 500) {
+          if (swipeX > 0) {
+            navigateCategory(-1) // Swipe right = go left (previous category)
+          } else {
+            navigateCategory(1) // Swipe left = go right (next category)
+          }
+        }
+      } else {
+        // Vertical swipe - navigate items
+        if (Math.abs(swipeY) > SWIPE_THRESHOLD || Math.abs(velocityY) > 500) {
+          if (swipeY > 0) {
+            navigateItem(-1) // Swipe down = go up (previous item)
+          } else {
+            navigateItem(1) // Swipe up = go down (next item)
+          }
+        }
+      }
+    },
+    [isPanelOpen, navigateCategory, navigateItem]
+  )
+
+  // Double tap to open panel (for mobile)
+  const lastTapRef = useRef<number>(0)
+  const handleTap = useCallback(() => {
+    if (isPanelOpen) return
+    
+    const now = Date.now()
+    const timeSinceLastTap = now - lastTapRef.current
+    
+    if (timeSinceLastTap < 300) {
+      // Double tap detected - open panel
+      openPanel()
+    }
+    lastTapRef.current = now
+  }, [isPanelOpen, openPanel])
 useEffect(() => {
   return () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
@@ -132,9 +186,17 @@ useEffect(() => {
   const categoryOffset = -categoryIndex * CATEGORY_SPACING
 
   return (
-    <div className="relative z-10 w-full h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative z-10 w-full h-screen flex items-center justify-center overflow-hidden touch-none">
+      {/* Touch/Swipe detection layer for mobile */}
+      <motion.div
+        className="absolute inset-0 z-20"
+        onPanEnd={handlePanEnd}
+        onTap={handleTap}
+        style={{ touchAction: "none" }}
+      />
+      
       {/* Main navigation container */}
-      <div className="relative flex items-center">
+      <div className="relative flex items-center z-30 pointer-events-none">
         {/* Horizontal categories row */}
         <motion.div
           className="flex items-center"
@@ -187,7 +249,7 @@ useEffect(() => {
                               newIndices[catIdx] = itemIdx
                               setItemIndices(newIndices)
                             }}
-                            className="focus:outline-none"
+                            className="focus:outline-none pointer-events-auto"
                             aria-label={`Select ${item.label}`}
                           >
                             <XMBItem
@@ -206,7 +268,7 @@ useEffect(() => {
                 {/* Category Icon */}
                 <button
                   onClick={() => setCategoryIndex(catIdx)}
-                  className="focus:outline-none relative z-10"
+                  className="focus:outline-none relative z-10 pointer-events-auto"
                   aria-label={`Navigate to ${category.label}`}
                 >
                   <XMBIcon
@@ -255,7 +317,7 @@ useEffect(() => {
                               openPanel()
                             }}
                             onDoubleClick={openPanel}
-                            className="focus:outline-none"
+                            className="focus:outline-none pointer-events-auto"
                             aria-label={`Select ${item.label}`}
                           >
                             <XMBItem
@@ -286,9 +348,9 @@ useEffect(() => {
         onClose={closePanel}
       />
 
-      {/* Navigation hints */}
+      {/* Navigation hints - Desktop */}
       <motion.div
-        className="fixed bottom-8 right-8 text-white/40 text-xs space-y-1"
+        className="fixed bottom-8 right-8 text-white/40 text-xs space-y-1 hidden md:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: isPanelOpen ? 0 : 1 }}
         transition={{ duration: 0.2 }}
@@ -307,6 +369,28 @@ useEffect(() => {
           <kbd className="px-2 py-1 bg-white/10 rounded text-white/60">Enter</kbd>
 
         </p>
+      </motion.div>
+
+      {/* Navigation hints - Mobile */}
+      <motion.div
+        className="fixed bottom-8 left-1/2 -translate-x-1/2 text-white/40 text-xs md:hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isPanelOpen ? 0 : 1 }}
+        transition={{ duration: 0.2 }}
+      >
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-center text-white/50">
+            {lang === 'es' ? 'Desliza para navegar' : 'Swipe to navigate'}
+          </p>
+          <div className="flex items-center gap-4">
+            <span className="text-white/40">← →</span>
+            <span className="text-white/30">|</span>
+            <span className="text-white/40">↑ ↓</span>
+          </div>
+          <p className="text-[10px] text-white/30 mt-1">
+            {lang === 'es' ? 'Doble tap para abrir' : 'Double tap to open'}
+          </p>
+        </div>
       </motion.div>
 
       {/* Time display tipo PS3 */}
