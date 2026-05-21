@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, PanInfo } from "framer-motion"
 import { X } from "lucide-react"
 import type { MenuItem } from "@/lib/portfolio-data"
 
@@ -30,6 +30,13 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
 
   const isThemeSelector = item.id === "theme";
 
+  // Swipe right to close panel on mobile
+  const handlePanEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    if (info.offset.x > 100 || info.velocity.x > 500) {
+      onClose()
+    }
+  }
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -47,11 +54,15 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
 
           {/* Panel Principal */}
           <motion.div
-            className="fixed top-0 right-0 h-full w-[400px] max-w-[90vw] z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl"
+            className="fixed top-0 right-0 h-full w-[400px] max-w-[90vw] z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl touch-pan-y"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 35 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={{ left: 0, right: 0.5 }}
+            onDragEnd={handlePanEnd}
           >
             {/* Contenedor con Scroll para que nada se tape */}
             <div className="h-full overflow-y-auto custom-scrollbar p-10 flex flex-col">
@@ -133,7 +144,8 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
 
               {/* Hint de cierre al final */}
               <div className="mt-auto pt-10 opacity-30 text-[10px] uppercase tracking-widest">
-                {lang === 'es' ? 'Presiona Esc para volver' : 'Press Esc to go back'}
+                <span className="hidden md:inline">{lang === 'es' ? 'Presiona Esc para volver' : 'Press Esc to go back'}</span>
+                <span className="md:hidden">{lang === 'es' ? 'Desliza hacia la derecha para volver' : 'Swipe right to go back'}</span>
               </div>
             </div>
           </motion.div>
