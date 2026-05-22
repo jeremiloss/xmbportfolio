@@ -108,7 +108,18 @@ export const portfolioData: Category[] = [
         icon: TbBuildingSkyscraper,
         url: "https://amaya.realestate/",
         description:
-          { es: "Rediseño integral de la plataforma y el sistema de diseño para Amaya Real Estate. El proyecto se centró en la optimización de los flujos de búsqueda y la creación de una librería de componentes escalable en Figma. Trabajando en dupla con el equipo de desarrollo, lideré la documentación técnica y un proceso de hand-off ultra limpio, lo que redujo la fricción en la etapa de ingeniería y permitió una implementación en producción rápida, eficiente y fiel al diseño original.", en: "Comprehensive redesign of the platform and design system for Amaya Real Estate. The project focused on optimizing user search flows and building a scalable component library in Figma. Working side-by-side with the development team, I led the technical documentation and a seamless hand-off process, significantly reducing engineering friction and ensuring a fast, efficient production launch that stayed 100% true to the design." },
+          { es: `• OVERVIEW: El canal de soporte colapsaba por consultas de datos ocultos en textos extensos. Se reestructuró la visualización para autoabastecer al usuario y liberar la carga operativa.
+
+• EL DESAFÍO: Resolver la fricción informativa sin modificar el sistema de diseño existente ni la estructura técnica profunda, maximizando el impacto bajo restricciones estrictas.
+
+• DECISIONES CLAVE: 
+1. Metadata crítica en primer nivel (m², ambientes, baños).
+2. Etiquetas de disponibilidad en tiempo real ("en venta", "reservada").
+3. Indicador de volumen de fotos en la vista previa.
+
+• LA SOLUCIÓN: El catálogo pasó de una galería estética a un tablero eficiente que prioriza atributos técnicos y permite un escaneo rápido.
+
+• IMPACTO: Se resolvieron ineficiencias operativas concretas mediante la micro-arquitectura de la información, demostrando que el valor del UX va más allá de una renovación estética integral.`, en: "Comprehensive redesign of the platform and design system for Amaya Real Estate. The project focused on optimizing user search flows and building a scalable component library in Figma. Working side-by-side with the development team, I led the technical documentation and a seamless hand-off process, significantly reducing engineering friction and ensuring a fast, efficient production launch that stayed 100% true to the design." },
       },
       {
         id: "cuentadni",
