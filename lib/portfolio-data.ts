@@ -138,7 +138,31 @@ export const portfolioData: Category[] = [
         icon: TbFaceId,
         url: "https://www.figma.com/design/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=0-1&t=eaZa6YJCSZwlGyRt-1",
         description:
-          { es: "Proyecto personal de rediseño para Cuenta DNI, la billetera digital líder en la provincia de Buenos Aires. El desafío se centró en optimizar la arquitectura de información y simplificar los flujos críticos de la app (como cobros y pagos con QR) para reducir la carga cognitiva de un público masivo y diverso. En el archivo de Figma vas a encontrar la investigación de usuarios, el benchmark competitivo y las interfaces de alta fidelidad que transforman la herramienta en una experiencia ágil, moderna y accesible.", en: "A personal redesign project for Cuenta DNI, the leading digital wallet in the Buenos Aires province. The challenge focused on optimizing information architecture and simplifying critical user flows—such as QR code payments—to reduce cognitive load for a massive, highly diverse user base. Inside the Figma file, you will find user research, competitive benchmarking, and high-fidelity interfaces crafted to transform the platform into a seamless, modern, and fully accessible experience." },
+          { es: `• OVERVIEW: Curva de aprendizaje elevada debido a una interfaz irregular que generaba confusión y ansiedad en entornos reales (como supermercados), afectando principalmente a adultos mayores.
+
+• EL DESAFÍO: Reestructurar la arquitectura de información y optimizar el micro-copy bajo presiones operativas, equilibrando el modelo basado en DNI con las convenciones financieras que los usuarios ya traían de otras apps.
+
+• DECISIONES CLAVE:
+1. Unificación de accesos: Se eliminaron duplicados, concentrando la acción en: transferir, solicitar y depositar.
+2. Convenciones de la industria: Navegación familiar agrupando destinatarios (Alias, CBU, DNI) e historial en un solo lugar.
+3. Refuerzo contextual: Micro-copy descriptivo e iconografía literal para asistir acciones críticas bajo presión de tiempo.
+
+• LA SOLUCIÓN: Pantalla principal y flujos optimizados bajo una lógica de consistencia externa, transformando una interfaz impredecible en un entorno familiar, seguro y de baja carga cognitiva.
+
+• IMPACTO: Las pruebas cualitativas demostraron que la predictibilidad eliminó el pánico pre-pago en comercios. Se validó que en productos financieros masivos, la familiaridad es el factor clave para la verdadera inclusión digital.`,
+    
+    en: `• OVERVIEW: High learning curve due to an inconsistent interface that caused confusion and anxiety during real-world use (e.g., supermarket checkout), heavily impacting older adults.
+
+• THE CHALLENGE: Restructure the information architecture and optimize micro-copy under tight operational constraints, balancing the identity-card-based model with established digital wallet habits.
+
+• KEY DECISIONS:
+1. Unified shortcuts: Removed duplicate workflows, focusing the interface on: transfer, request, and deposit.
+2. Industry standards: Replaced experimental layouts with common patterns, grouping recipient types and history.
+3. Contextual reinforcement: Introduced descriptive micro-copy and literal iconography to guide critical actions under pressure.
+
+• THE SOLUTION: Reorganized the home screen and transfer flows using external consistency, transforming an unpredictable environment into a familiar, safe, and low-cognitive-load experience.
+
+• IMPACT: Qualitative testing showed that structural predictability eliminated checkout anxiety. The project proved that for mass-market financial tools, familiarity is the ultimate driver for digital inclusion.` },
       },
       {
         id: "bondify",
