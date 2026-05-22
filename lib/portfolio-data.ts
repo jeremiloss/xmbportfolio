@@ -119,7 +119,18 @@ export const portfolioData: Category[] = [
 
 • LA SOLUCIÓN: El catálogo pasó de una galería estética a un tablero eficiente que prioriza atributos técnicos y permite un escaneo rápido.
 
-• IMPACTO: Se resolvieron ineficiencias operativas concretas mediante la micro-arquitectura de la información, demostrando que el valor del UX va más allá de una renovación estética integral.`, en: "Comprehensive redesign of the platform and design system for Amaya Real Estate. The project focused on optimizing user search flows and building a scalable component library in Figma. Working side-by-side with the development team, I led the technical documentation and a seamless hand-off process, significantly reducing engineering friction and ensuring a fast, efficient production launch that stayed 100% true to the design." },
+• IMPACTO: Se resolvieron ineficiencias operativas concretas mediante la micro-arquitectura de la información, demostrando que el valor del UX va más allá de una renovación estética integral.`, en: `• OVERVIEW: Support channels were overwhelmed due to property data hidden in long texts. Visualizations were restructured to enable user autonomy and reduce operational load.
+
+• THE CHALLENGE: Resolve information friction without altering the existing design system or deep technical structure, maximizing impact under tight constraints.
+
+• KEY DECISIONS:
+1. First-level critical metadata (sqft, rooms, bathrooms).
+2. Real-time availability labels ("for sale", "reserved").
+3. Image count indicator on previews.
+
+• THE SOLUTION: Shifted the catalog from a purely aesthetic gallery to an efficient dashboard that prioritizes technical attributes for quick scanning.
+
+• IMPACT: Resolved concrete operational inefficiencies through information micro-architecture, proving UX value goes far beyond full aesthetic redesigns.` },
       },
       {
         id: "cuentadni",
