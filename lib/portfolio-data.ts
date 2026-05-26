@@ -136,7 +136,7 @@ export const portfolioData: Category[] = [
         id: "cuentadni",
         label: { es: "Rediseño Cuenta-DNI", en: "Cuenta DNI-Redesign" },
         icon: TbFaceId,
-        url: "https://www.figma.com/design/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=0-1&t=eaZa6YJCSZwlGyRt-1",
+        url: "https://www.figma.com/proto/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=2313-3881&t=6efakWaMNbZmMWNJ-0&scaling=min-zoom&content-scaling=fixed&page-id=2313%3A3621",
         description:
           { es: `• OVERVIEW: Curva de aprendizaje elevada debido a una interfaz irregular que generaba confusión y ansiedad en entornos reales (como supermercados), afectando principalmente a adultos mayores.
 
