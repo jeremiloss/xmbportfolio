@@ -168,7 +168,7 @@ export const portfolioData: Category[] = [
         id: "bondify",
         label: { es: "Bondify", en: "Bondify" },
         icon: TbBusStop,
-        url: "https://www.figma.com/design/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=0-1&t=tXiJXtcrYYffwZEe-1",
+        url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
           { es: "Bondify es un proyecto de diseño conceptual enfocado en revolucionar la experiencia de movilidad urbana y transporte público. El proyecto aborda de manera integral los puntos de dolor más comunes del usuario de colectivos: desde la predictibilidad de horarios en tiempo real hasta la simplificación de la gestión de pasajes. A través de interfaces limpias, componentes de navegación rápida y un sistema visual de alto contraste pensado para el uso dinámico en la calle, el prototipo en Figma despliega una solución ágil que transforma el caos cotidiano en un flujo intuitivo y controlado.", en: "Bondify is a conceptual design project focused on redefining the urban mobility and public transit experience. The case study tackles the most critical pain points of daily commuters: from real-time scheduling predictability to streamlined transit-card management. Featuring clean layouts, rapid-navigation UI components, and a high-contrast visual system tailored for on-the-go street usage, the Figma prototype showcases an agile mobile solution that turns daily transit chaos into a seamless, controlled user journey." },
       },
