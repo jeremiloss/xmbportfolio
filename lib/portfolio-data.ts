@@ -200,7 +200,7 @@ export const portfolioData: Category[] = [
         id: "pilchago",
         label: { es: "PilchaGO", en: "PilchaGO" },
         icon: TbShirt,
-        url: "https://www.figma.com/design/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-102&t=TW2la3lnUORxM6JN-1",
+        url: "https://www.figma.com/proto/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-566&t=JIDwm4boP5wSgSf5-1&scaling=contain&content-scaling=fixed&page-id=137%3A102",
         description:
           { es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
 
