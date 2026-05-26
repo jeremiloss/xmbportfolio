@@ -170,7 +170,31 @@ export const portfolioData: Category[] = [
         icon: TbBusStop,
         url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
-          { es: "Bondify es un proyecto de diseño conceptual enfocado en revolucionar la experiencia de movilidad urbana y transporte público. El proyecto aborda de manera integral los puntos de dolor más comunes del usuario de colectivos: desde la predictibilidad de horarios en tiempo real hasta la simplificación de la gestión de pasajes. A través de interfaces limpias, componentes de navegación rápida y un sistema visual de alto contraste pensado para el uso dinámico en la calle, el prototipo en Figma despliega una solución ágil que transforma el caos cotidiano en un flujo intuitivo y controlado.", en: "Bondify is a conceptual design project focused on redefining the urban mobility and public transit experience. The case study tackles the most critical pain points of daily commuters: from real-time scheduling predictability to streamlined transit-card management. Featuring clean layouts, rapid-navigation UI components, and a high-contrast visual system tailored for on-the-go street usage, the Figma prototype showcases an agile mobile solution that turns daily transit chaos into a seamless, controlled user journey." },
+          { es: `• OVERVIEW: Los usuarios no frecuentes de transporte público carecen de información confiable ante imprevistos en la calle, enfrentando interfaces saturadas de publicidad o datos inexactos.
+
+• EL DESAFÍO: Contener el alcance del producto dentro de límites viables. Se resistió la tentación de sumar pagos o rastreo en tiempo real sobre el mapa para priorizar el foco principal: la orientación inmediata del pasajero en apuros.
+
+• DECISIONES CLAVE:
+1. Interfaz de acompañamiento: Modelo dinámico por etapas inspirado en apps de movilidad privada (caminata, espera, arribo).
+2. Reducción transaccional: Se canceló la pasarela de pago; se limitó a la consulta estática de saldo y costo de pasaje.
+3. Alertas de contingencia: Priorización visual de desvíos y cambios operativos antes de que el usuario inicie el viaje.
+
+• LA SOLUCIÓN: Un asistente de navegación secuencial y guiado que reemplaza la búsqueda libre por un flujo asistido. Provee solo los datos necesarios para el tramo actual, acelerando la toma de decisiones en la vía pública.
+
+• IMPACTO: Los testeos demostraron asimilación inmediata al heredar patrones visuales de apps de delivery y transporte. Se validó que la claridad informativa en momentos de estrés vale más que un listado extenso de funciones difíciles de programar.`,
+    
+    en: `• OVERVIEW: Infrequent public transit users lack reliable real-time info during roadside updates, often facing ad-heavy interfaces or inaccurate data.
+
+• THE CHALLENGE: Keep the product scope strictly within viable development limits, resisting the urge to add ticket payments or complex live tracking to keep the focus on immediate route guidance.
+
+• KEY DECISIONS:
+1. Stage-based companion UI: A dynamic state model inspired by ride-hailing apps (walking to stop, waiting time, proximity).
+2. Reduced transactional scope: Canceled payment gateways, limiting financial features to basic card balance views.
+3. Contingency alerts: Structured the layout to highlight route detours and schedule changes before the trip begins.
+
+• THE SOLUTION: A sequential navigation assistant that replaces open-ended search with a guided workflow. It delivers only the required data for the current leg of the trip, speeding up decision-making on the street.
+
+• IMPACT: Interactive prototype tests showed immediate adoption by leveraging familiar delivery and mobility UX patterns. The process proved that clarity under stress outweighs a long list of complex features.` },
       },
       {
         id: "pilchago",
