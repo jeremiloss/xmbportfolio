@@ -136,7 +136,7 @@ export const portfolioData: Category[] = [
         id: "cuentadni",
         label: { es: "Rediseño Cuenta-DNI", en: "Cuenta DNI-Redesign" },
         icon: TbFaceId,
-        url: "https://www.figma.com/design/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=0-1&t=eaZa6YJCSZwlGyRt-1",
+        url: "https://www.figma.com/proto/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=2313-3881&t=6efakWaMNbZmMWNJ-0&scaling=min-zoom&content-scaling=fixed&page-id=2313%3A3621",
         description:
           { es: `• OVERVIEW: Curva de aprendizaje elevada debido a una interfaz irregular que generaba confusión y ansiedad en entornos reales (como supermercados), afectando principalmente a adultos mayores.
 
@@ -168,17 +168,65 @@ export const portfolioData: Category[] = [
         id: "bondify",
         label: { es: "Bondify", en: "Bondify" },
         icon: TbBusStop,
-        url: "https://www.figma.com/design/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=0-1&t=tXiJXtcrYYffwZEe-1",
+        url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
-          { es: "Bondify es un proyecto de diseño conceptual enfocado en revolucionar la experiencia de movilidad urbana y transporte público. El proyecto aborda de manera integral los puntos de dolor más comunes del usuario de colectivos: desde la predictibilidad de horarios en tiempo real hasta la simplificación de la gestión de pasajes. A través de interfaces limpias, componentes de navegación rápida y un sistema visual de alto contraste pensado para el uso dinámico en la calle, el prototipo en Figma despliega una solución ágil que transforma el caos cotidiano en un flujo intuitivo y controlado.", en: "Bondify is a conceptual design project focused on redefining the urban mobility and public transit experience. The case study tackles the most critical pain points of daily commuters: from real-time scheduling predictability to streamlined transit-card management. Featuring clean layouts, rapid-navigation UI components, and a high-contrast visual system tailored for on-the-go street usage, the Figma prototype showcases an agile mobile solution that turns daily transit chaos into a seamless, controlled user journey." },
+          { es: `• OVERVIEW: Los usuarios no frecuentes de transporte público carecen de información confiable ante imprevistos en la calle, enfrentando interfaces saturadas de publicidad o datos inexactos.
+
+• EL DESAFÍO: Contener el alcance del producto dentro de límites viables. Se resistió la tentación de sumar pagos o rastreo en tiempo real sobre el mapa para priorizar el foco principal: la orientación inmediata del pasajero en apuros.
+
+• DECISIONES CLAVE:
+1. Interfaz de acompañamiento: Modelo dinámico por etapas inspirado en apps de movilidad privada (caminata, espera, arribo).
+2. Reducción transaccional: Se canceló la pasarela de pago; se limitó a la consulta estática de saldo y costo de pasaje.
+3. Alertas de contingencia: Priorización visual de desvíos y cambios operativos antes de que el usuario inicie el viaje.
+
+• LA SOLUCIÓN: Un asistente de navegación secuencial y guiado que reemplaza la búsqueda libre por un flujo asistido. Provee solo los datos necesarios para el tramo actual, acelerando la toma de decisiones en la vía pública.
+
+• IMPACTO: Los testeos demostraron asimilación inmediata al heredar patrones visuales de apps de delivery y transporte. Se validó que la claridad informativa en momentos de estrés vale más que un listado extenso de funciones difíciles de programar.`,
+    
+    en: `• OVERVIEW: Infrequent public transit users lack reliable real-time info during roadside updates, often facing ad-heavy interfaces or inaccurate data.
+
+• THE CHALLENGE: Keep the product scope strictly within viable development limits, resisting the urge to add ticket payments or complex live tracking to keep the focus on immediate route guidance.
+
+• KEY DECISIONS:
+1. Stage-based companion UI: A dynamic state model inspired by ride-hailing apps (walking to stop, waiting time, proximity).
+2. Reduced transactional scope: Canceled payment gateways, limiting financial features to basic card balance views.
+3. Contingency alerts: Structured the layout to highlight route detours and schedule changes before the trip begins.
+
+• THE SOLUTION: A sequential navigation assistant that replaces open-ended search with a guided workflow. It delivers only the required data for the current leg of the trip, speeding up decision-making on the street.
+
+• IMPACT: Interactive prototype tests showed immediate adoption by leveraging familiar delivery and mobility UX patterns. The process proved that clarity under stress outweighs a long list of complex features.` },
       },
       {
         id: "pilchago",
         label: { es: "PilchaGO", en: "PilchaGO" },
         icon: TbShirt,
-        url: "https://www.figma.com/design/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-102&t=TW2la3lnUORxM6JN-1",
+        url: "https://www.figma.com/proto/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-566&t=JIDwm4boP5wSgSf5-1&scaling=contain&content-scaling=fixed&page-id=137%3A102",
         description:
-          { es: "PilchaGO es una plataforma conceptual de 'recommerce' y feria americana virtual diseñada específicamente para la comunidad estudiantil. Rompiendo con el esquema de los marketplaces genéricos, el diseño se centra en la curaduría visual y los gustos personales como eje de navegación, permitiendo a los usuarios comprar y vender ropa de forma organizada, categorizada y con fuerte foco en la identidad de estilo. El prototipo en Figma despliega una interfaz fresca, sistemas de filtrado por estéticas y flujos de publicación ágiles que transforman la moda circular en una experiencia social y comunitaria.", en: "PilchaGO is a conceptual recommerce platform and virtual thrift store tailored for the student community. Shifting away from generic marketplaces, the product focuses on visual curation and personal style as the core navigation drivers, allowing users to buy and sell clothes in an organized, highly categorized space that celebrates personal identity. The Figma prototype showcases a fresh interface, aesthetic-based filtering systems, and frictionless posting flows designed to transform circular fashion into an engaging, community-driven social experience." },
+          { es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
+
+• EL DESAFÍO: Garantizar transacciones seguras entre desconocidos a costo cero. Al descartar envíos y pasarelas de pago por viabilidad económica, el diseño debió asumir la responsabilidad total de mitigar la desconfianza del encuentro presencial.
+
+• DECISIONES CLAVE:
+1. Logística descentralizada: Se eliminaron envíos integrados, delegando la coordinación en los usuarios para mantener el costo cero y el sentido comunitario.
+2. Reputación en primer nivel: Validación social del vendedor (ventas e historial positivo) compartiendo protagonismo inmediato con la foto de la prenda.
+3. Jerarquización de identidad: Se rechazó el anonimato de catálogos masivos, fijando bloques que anclan el artículo a una persona real dentro del circuito local.
+
+• LA SOLUCIÓN: Una plataforma de catálogo curado donde la arquitectura de la información antepone la identidad y confiabilidad del ofertante por sobre la ficha técnica de la ropa, habilitando un contacto seguro fuera de la app.
+
+• IMPACTO: Los testeos demostraron que visibilizar agresivamente las reseñas neutralizó el miedo a coordinar encuentros físicos en la ciudad. Se aprendió que, al remover funciones como el envío, el diseño debe sobrecompensar la seguridad mediante transparencia visual para hacer sostenible el modelo.`,
+    
+    en: `• OVERVIEW: College students on tight budgets rely on physical thrift markets, but limited time and volatile weather break the experience. Designed a local circular fashion platform that digitizes the market dynamic without traditional marketplace fees.
+
+• THE CHALLENGE: Ensure safe peer-to-peer transactions locally at zero cost. By ruling out integrated shipping and payment gateways for affordability, the UI design had to take full responsibility for mitigating meetup anxiety.
+
+• KEY DECISIONS:
+1. Decentralized logistics: Removed integrated shipping, empowering users to self-coordinate to preserve the community feel and zero-cost model.
+2. First-level reputation: Social proof (completed sales and rating percentages) shares immediate screen space with the product photography.
+3. Identity hierarchy: Rejected anonymous marketplace listings by establishing visible profile blocks that anchor items to real people within the student circuit.
+
+• LA SOLUCIÓN: A curated catalog platform where the information architecture prioritizes user identity and trust over technical garment details, driving a secure framework for off-app coordination.
+
+• IMPACT: Testing showed that aggressively showcasing user reviews neutralized resistance to physical meetups in the city. The project proved that when removing core features like shipping, the UI must overcompensate with visual transparency to keep community models sustainable.` },
       },
       {
         id: "tcc",
