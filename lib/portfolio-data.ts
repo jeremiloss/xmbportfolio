@@ -28,8 +28,9 @@ import {
     TbClock,
     TbWand,
     TbComponents,
+    TbCameraSelfie,
     TbTools,
-    TbColorSwatch,   
+    TbColorSwatch,  
   } from "react-icons/tb";
 import type { ComponentType } from "react"
 export interface MenuItem {
