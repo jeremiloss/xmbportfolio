@@ -85,7 +85,7 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-zinc-950/40 aspect-video shadow-2xl flex items-center justify-center group mb-6"
+                  className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-zinc-950/40 aspect-3/4 shadow-2xl flex items-center justify-center group mb-6"
                 >
                   <img
                     src={item.image}
