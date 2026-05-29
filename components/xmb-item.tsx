@@ -12,7 +12,7 @@ interface XMBItemProps {
 }
 
 export function XMBItem({ item, isActive, offset, lang }: XMBItemProps) {
-  const Icon = item.icon
+  const Icon = item.icon as any
   const absOffset = Math.abs(offset)
 
   return (
