@@ -84,14 +84,14 @@ export const portfolioData: Category[] = [
         icon: TbPhoto,
         image:"/20260331_234223.jpg",
         description:
-          { es: "Formación universitaria en la UNLP enfocada en la intersección de sistemas interactivos, narración visual y diseño de comunicación digital. Aquí desarrollé mis bases metodológicas y el pensamiento crítico aplicado a productos digitales.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
+          { es: "Acá comenzó mi amor por la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada Frankenstein, porque mamá la armó poco a poco, con partes y componentes de otras pcs.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
       },
       {
         id: "uxui",
         label: { es: "Diseño de Producto", en: "Product Design" },
         icon: TbPhoto,
         description:
-          { es: "Especialización práctica orientada al mercado tecnológico. Profundicé en metodologías ágiles, investigación de usuarios (User Research), sistemas de diseño escalables y la optimización de flujos de trabajo UX mediante herramientas de IA.", en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
+          { es: "Acá comenzó mi amor por la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada Frankenstein, porque mamá la armó poco a poco, con partes y componentes de otras pcs.", en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
       },
       {
         id: "databi",
