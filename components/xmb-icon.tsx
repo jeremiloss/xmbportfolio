@@ -41,7 +41,7 @@ export function XMBIcon({ icon: Icon, label, isActive, isInActiveColumn }: XMBIc
         <Icon
           className={`w-12 h-12 transition-colors duration-300 ${isActive ? "text-white" : "text-white/60"
             }`}
-          strokeWidth={1.5}
+          strokeWidth={.5}
         />
         {isActive && (
           <motion.div
