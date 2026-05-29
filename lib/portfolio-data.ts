@@ -79,9 +79,10 @@ export const portfolioData: Category[] = [
     icon: TbCameraSelfie,
     items: [
       {
-        id: "multimedia",
-        label: { es: "Lic. Diseño Multimedial", en: "B.A in Multimedia Design" },
+        id: "jerekidpic",
+        label: { es: "351513351", en: "351513351" },
         icon: TbPhoto,
+        image:"/images/amaya-case.jpg",
         description:
           { es: "Formación universitaria en la UNLP enfocada en la intersección de sistemas interactivos, narración visual y diseño de comunicación digital. Aquí desarrollé mis bases metodológicas y el pensamiento crítico aplicado a productos digitales.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
       },
