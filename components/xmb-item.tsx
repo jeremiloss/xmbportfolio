@@ -42,6 +42,7 @@ export function XMBItem({ item, isActive, offset, lang }: XMBItemProps) {
       >
         <Icon
           className={`w-5 h-5 ${isActive ? "text-white" : "text-white/60"}`}
+          strokeWidth={1.5}
         />
       </motion.div>
 
