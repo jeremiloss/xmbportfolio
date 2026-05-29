@@ -84,7 +84,7 @@ export const portfolioData: Category[] = [
         icon: TbPhoto,
         image:"/20260331_234223.jpg",
         description:
-          { es: "Acá comenzó mi amor por la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada Franky en referencia al monstruo de Frankenstein ya que mamá la armó poco a poco, comprando componentes, rescatando otros de pcs rotas o viejas.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
+          { es: "Acá comenzó mi amor por los juegos, las historias y la tecnologia. Mi hermano Eze y yo, jugando con la pc familiar apodada Franky en referencia al monstruo de Frankenstein ya que mamá la fue armando poco a poco comprando componentes, rescatando otros de pcs rotas o viejas.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
       },
       {
         id: "uxui",
