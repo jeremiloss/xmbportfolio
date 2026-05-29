@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { ComponentType, SVGProps} from "react"
 
 interface XMBIconProps {
-  icon: ComponentType<{ className?: string }>
+  icon: ComponentType<{ className?: string } & SVGProps<SVGSVGElement>>
   label: string
   isActive: boolean
   isInActiveColumn: boolean
