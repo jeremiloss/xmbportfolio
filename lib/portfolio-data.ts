@@ -30,7 +30,8 @@ import {
     TbComponents,
     TbCameraSelfie,
     TbTools,
-    TbColorSwatch,  
+    TbColorSwatch,
+    TbCamera,  
   } from "react-icons/tb";
 import type { ComponentType } from "react"
 export interface MenuItem {
@@ -71,9 +72,9 @@ export const portfolioData: Category[] = [
     ],
   },
   {
-    id: "education",
-    label: { es: "Formación", en: "Education" },
-    icon: TbCertificate,
+    id: "photo",
+    label: { es: "Fotos", en: "Photo" },
+    icon: TbCameraSelfie,
     items: [
       {
         id: "multimedia",
