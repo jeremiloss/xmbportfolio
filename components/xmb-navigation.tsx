@@ -272,7 +272,7 @@ useEffect(() => {
                   aria-label={`Navigate to ${category.label}`}
                 >
                   <XMBIcon
-                    icon={category.icon}
+                    icon=any
                     label={category.label[lang]}
                     isActive={isActive}
                     isInActiveColumn={true}
