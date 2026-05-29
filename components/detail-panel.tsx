@@ -4,7 +4,6 @@ import { motion, AnimatePresence, PanInfo } from "framer-motion"
 import { X } from "lucide-react"
 import type { MenuItem } from "@/lib/portfolio-data"
 
-
 const SYSTEM_COLORS = [
   { id: 'classic', name: { es: 'Azul Sly', en: 'Sly Blue' }, value: '#3d4eb8' },
   { id: 'kratos', name: { es: 'Rojo espartano', en: 'Spartan Red' }, value: '#9b252d' },
@@ -24,13 +23,11 @@ interface DetailPanelProps {
   onColorChange: (color: string) => void
 }
 
-
 export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColorChange }: DetailPanelProps) {
   if (!item) return null
 
-  const isThemeSelector = item.id === "theme";
+  const isThemeSelector = item.id === "theme"
 
-  // Swipe right to close panel on mobile
   const handlePanEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     if (info.offset.x > 100 || info.velocity.x > 500) {
       onClose()
@@ -41,7 +38,6 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* 2. El Backdrop: Solo se renderiza si NO es el selector de temas */}
           {!isThemeSelector && (
             <motion.div
               className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm"
@@ -52,9 +48,11 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
             />
           )}
 
-          {/* Panel Principal */}
           <motion.div
-            className="fixed top-0 right-0 h-full w-[400px] max-w-[90vw] z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl touch-pan-y"
+            /* 🛠️ MAGIA ACÁ: Si tiene imagen, el panel se ensancha a 550px con una transición suave */
+            className={`fixed top-0 right-0 h-full z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl touch-pan-y ${
+              item.image ? "w-[550px]" : "w-[400px]"
+            } max-w-[90vw]`}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -64,9 +62,8 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
             dragElastic={{ left: 0, right: 0.5 }}
             onDragEnd={handlePanEnd}
           >
-            {/* Contenedor con Scroll para que nada se tape */}
             <div className="h-full overflow-y-auto custom-scrollbar p-10 flex flex-col">
-
+              
               {/* Botón Cerrar */}
               <button onClick={onClose} className="ml-auto mb-10 p-2 hover:bg-white/10 rounded-full transition-colors">
                 <X className="w-6 h-6 text-white/50" />
@@ -82,9 +79,25 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                 {item.label[lang]}
               </h2>
 
+              {/* 🖼️ SECCIÓN NUEVA: Renderizador de Captura con marco premium */}
+              {item.image && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-zinc-950/40 aspect-video shadow-2xl flex items-center justify-center group mb-6"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.label[lang]}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Filtro sutil de barrido tipo monitor de consola */}
+                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-white/5 via-transparent to-black/20" />
+                </motion.div>
+              )}
 
-
-              {/* DESCRIPCIÓN: El bloque que no se veía */}
+              {/* DESCRIPCIÓN (Sirve para textos comunes y epígrafes de fotos) */}
               {item.description && (
                 <div className="mb-8">
                   <p className="text-white/70 text-base font-light leading-relaxed whitespace-pre-wrap">
@@ -92,6 +105,8 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                   </p>
                 </div>
               )}
+
+              {/* Botón de Enlace Externo */}
               {item.url && (
                 <motion.div
                   initial={{ opacity: 0, y: 0 }}
@@ -108,7 +123,6 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                     <span>
                       {lang === 'es' ? 'Chequealo' : 'Take a look'}
                     </span>
-                    {/* Una flechita sutil que se mueve al hacer hover */}
                     <span className="transform group-hover:translate-x-1 transition-transform duration-200">
                       →
                     </span>
@@ -116,7 +130,7 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                 </motion.div>
               )}
 
-              {/* SELECTOR DE COLORES (Si es el item de theme) */}
+              {/* SELECTOR DE COLORES */}
               {item.id === "theme" && (
                 <motion.div
                   className="flex flex-col gap-3 mt-4"

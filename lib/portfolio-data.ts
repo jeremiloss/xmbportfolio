@@ -40,6 +40,8 @@ export interface MenuItem {
   icon: ComponentType<{ className?: string }>
   description?: { es: string, en: string }
   url?: string
+  buttonText?: { es: string; en: string }
+  image?: string
 }
 
 export interface Category {
@@ -77,23 +79,24 @@ export const portfolioData: Category[] = [
     icon: TbCameraSelfie,
     items: [
       {
-        id: "multimedia",
-        label: { es: "Lic. Diseño Multimedial", en: "B.A in Multimedia Design" },
-        icon: TbDevices,
+        id: "jerekidpic",
+        label: { es: "351513351", en: "351513351" },
+        icon: TbPhoto,
+        image:"/images/amaya-case.jpg",
         description:
           { es: "Formación universitaria en la UNLP enfocada en la intersección de sistemas interactivos, narración visual y diseño de comunicación digital. Aquí desarrollé mis bases metodológicas y el pensamiento crítico aplicado a productos digitales.", en: "University background at UNLP focused on the intersection of interactive systems, visual storytelling, and digital communication design. This is where I built my methodological foundations and critical thinking applied to digital products." },
       },
       {
         id: "uxui",
         label: { es: "Diseño de Producto", en: "Product Design" },
-        icon: TbStack3,
+        icon: TbPhoto,
         description:
           { es: "Especialización práctica orientada al mercado tecnológico. Profundicé en metodologías ágiles, investigación de usuarios (User Research), sistemas de diseño escalables y la optimización de flujos de trabajo UX mediante herramientas de IA.", en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
       },
       {
         id: "databi",
         label: { es: "Análisis de Datos & BI", en: "Data Analytics & BI" },
-        icon: TbChartDots2,
+        icon: TbPhoto,
         description:
           { es: "Capacitación en Jupi Digital, enfocada en la toma de decisiones de diseño basadas en evidencia. Modelado de datos y analítica para transformar métricas e información de negocio en mejoras de experiencia de usuario cuantitativas y medibles.", en: "Training focused on data-driven design decision-making. Data modeling and analytics to transform business metrics and raw insights into quantitative, measurable improvements in user experience." },
       },
