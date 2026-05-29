@@ -1,10 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import type { LucideIcon } from "lucide-react"
+import { ComponentType, SVGProps} from "react"
 
 interface XMBIconProps {
-  icon: LucideIcon
+  icon: ComponentType<{ className?: string } & SVGProps<SVGSVGElement>>
   label: string
   isActive: boolean
   isInActiveColumn: boolean
