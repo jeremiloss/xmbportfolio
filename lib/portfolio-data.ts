@@ -40,6 +40,8 @@ export interface MenuItem {
   icon: ComponentType<{ className?: string }>
   description?: { es: string, en: string }
   url?: string
+  buttonText?: { es: string; en: string }
+  image?: string
 }
 
 export interface Category {
