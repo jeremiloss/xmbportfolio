@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ComponentType} from "react"
+import { ComponentType, SVGProps} from "react"
 
 interface XMBIconProps {
   icon: ComponentType<{ className?: string }>
