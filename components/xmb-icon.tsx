@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
+import { ComponentType } from "react"
 
 interface XMBIconProps {
-  icon: LucideIcon
+  icon: ComponentType<{ className?: string }>
   label: string
   isActive: boolean
   isInActiveColumn: boolean
