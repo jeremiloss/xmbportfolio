@@ -31,7 +31,7 @@ import {
     TbCameraSelfie,
     TbTools,
     TbColorSwatch,
-    TbCamera,  
+    TbPhoto,  
   } from "react-icons/tb";
 import type { ComponentType } from "react"
 export interface MenuItem {
