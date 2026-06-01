@@ -92,7 +92,7 @@ export const portfolioData: Category[] = [
         icon: TbPhoto,
         image:"/IMG-20250509-WA0051.jpeg",
         description:
-          { es: `Syndrita mi eterna compañera y guía, te amo`, en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
+          { es: `Syndrita mi eterna compañera y guía, te amo.`, en: `Syndrita mi eterna compañera y guía, te amo.` },
       },
       {
         id: "databi",
