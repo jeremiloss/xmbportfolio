@@ -87,11 +87,12 @@ export const portfolioData: Category[] = [
           { es: `Acá comenzó mi amor por los juegos, las historias y la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada "Franky" en referencia al monstruo de Frankenstein ya que mamá la fue armando poco a poco comprando componentes, rescatando otros de pcs rotas o viejas.`, en: "This is where my love for gaming, storytelling, and technology began. My brother Eze and I, playing on the family PC—nicknamed 'Franky' after Frankenstein's monster, since Mom built it piece by piece, buying some components and scavenging others from broken or old computers." },
       },
       {
-        id: "uxui",
-        label: { es: "Diseño de Producto", en: "Product Design" },
+        id: "syndra",
+        label: { es: "Syndrita", en: "Syndrita" },
         icon: TbPhoto,
+        image:"/IMG-20250509-WA0051.jpeg",
         description:
-          { es: "Acá comenzó mi amor por la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada Frankenstein, porque mamá la armó poco a poco, con partes y componentes de otras pcs.", en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
+          { es: `Syndrita mi eterna compañera y guía, te amo`, en: "Hands-on specialization tailored for the tech market. I dove deep into agile methodologies, user research, scalable design systems, and the optimization of UX workflows using AI tools." },
       },
       {
         id: "databi",
