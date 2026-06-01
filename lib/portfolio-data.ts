@@ -1,38 +1,38 @@
-import { 
-    TbBrandVercelFilled,
-    TbBrandVscode,
-    TbBrandFigma,
-    TbBrandFramer,
-    TbBrandLinkedin,
-    TbBrandInstagram,
-    TbBrandTwitter, 
-    TbCards,
-    TbShirt,
-    TbBuildingSkyscraper,
-    TbBriefcase2,
-    TbChartDots2,
-    TbCertificate,
-    TbDatabase,
-    TbTerminal,
-    TbFaceId,
-    TbPill,
-    TbMessageChatbot,
-    TbMoodSmile ,
-    TbMail,
-    TbSettings,
-    TbLanguage,
-    TbBusStop,
-    TbDevices,
-    TbStack3,
-    TbInfoSquareRounded,
-    TbClock,
-    TbWand,
-    TbComponents,
-    TbCameraSelfie,
-    TbTools,
-    TbColorSwatch,
-    TbPhoto,  
-  } from "react-icons/tb";
+import {
+  TbBrandVercelFilled,
+  TbBrandVscode,
+  TbBrandFigma,
+  TbBrandFramer,
+  TbBrandLinkedin,
+  TbBrandInstagram,
+  TbBrandTwitter,
+  TbCards,
+  TbShirt,
+  TbBuildingSkyscraper,
+  TbBriefcase2,
+  TbChartDots2,
+  TbCertificate,
+  TbDatabase,
+  TbTerminal,
+  TbFaceId,
+  TbPill,
+  TbMessageChatbot,
+  TbMoodSmile,
+  TbMail,
+  TbSettings,
+  TbLanguage,
+  TbBusStop,
+  TbDevices,
+  TbStack3,
+  TbInfoSquareRounded,
+  TbClock,
+  TbWand,
+  TbComponents,
+  TbCameraSelfie,
+  TbTools,
+  TbColorSwatch,
+  TbPhoto,
+} from "react-icons/tb";
 import type { ComponentType } from "react"
 export interface MenuItem {
   id: string
@@ -82,7 +82,7 @@ export const portfolioData: Category[] = [
         id: "jerekidpic",
         label: { es: "351513351", en: "351513351" },
         icon: TbPhoto,
-        image:"/20260331_234223.jpg",
+        image: "/20260331_234223.jpg",
         description:
           { es: `Acá comenzó mi amor por los juegos, las historias y la tecnología. Mi hermano Eze y yo, jugando con la pc familiar apodada "Franky" en referencia al monstruo de Frankenstein ya que mamá la fue armando poco a poco comprando componentes, rescatando otros de pcs rotas o viejas.`, en: "This is where my love for gaming, storytelling, and technology began. My brother Eze and I, playing on the family PC—nicknamed 'Franky' after Frankenstein's monster, since Mom built it piece by piece, buying some components and scavenging others from broken or old computers." },
       },
@@ -90,9 +90,9 @@ export const portfolioData: Category[] = [
         id: "syndra",
         label: { es: "Syndrita", en: "Syndrita" },
         icon: TbPhoto,
-        image:"/IMG-20250509-WA0051.jpeg",
+        image: "/IMG-20250509-WA0051.jpeg",
         description:
-          { es: `Syndrita mi eterna compañera y guía, te amo.`, en: `Syndrita mi eterna compañera y guía, te amo.` },
+          { es: `Syndrita mi eterna compañera y guía, te amo.`, en: `Syndrita my eternal guide and companion, love you 3000` },
       },
       {
         id: "databi",
@@ -142,7 +142,8 @@ export const portfolioData: Category[] = [
         icon: TbBuildingSkyscraper,
         url: "https://amaya.realestate/",
         description:
-          { es: `• OVERVIEW: El canal de soporte colapsaba por consultas de datos ocultos en textos extensos. Se reestructuró la visualización para autoabastecer al usuario y liberar la carga operativa.
+        {
+          es: `• OVERVIEW: El canal de soporte colapsaba por consultas de datos ocultos en textos extensos. Se reestructuró la visualización para autoabastecer al usuario y liberar la carga operativa.
 
 • EL DESAFÍO: Resolver la fricción informativa sin modificar el sistema de diseño existente ni la estructura técnica profunda, maximizando el impacto bajo restricciones estrictas.
 
@@ -172,7 +173,8 @@ export const portfolioData: Category[] = [
         icon: TbFaceId,
         url: "https://www.figma.com/proto/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=2313-3881&t=6efakWaMNbZmMWNJ-0&scaling=min-zoom&content-scaling=fixed&page-id=2313%3A3621",
         description:
-          { es: `• OVERVIEW: Curva de aprendizaje elevada debido a una interfaz irregular que generaba confusión y ansiedad en entornos reales (como supermercados), afectando principalmente a adultos mayores.
+        {
+          es: `• OVERVIEW: Curva de aprendizaje elevada debido a una interfaz irregular que generaba confusión y ansiedad en entornos reales (como supermercados), afectando principalmente a adultos mayores.
 
 • EL DESAFÍO: Reestructurar la arquitectura de información y optimizar el micro-copy bajo presiones operativas, equilibrando el modelo basado en DNI con las convenciones financieras que los usuarios ya traían de otras apps.
 
@@ -184,8 +186,8 @@ export const portfolioData: Category[] = [
 • LA SOLUCIÓN: Pantalla principal y flujos optimizados bajo una lógica de consistencia externa, transformando una interfaz impredecible en un entorno familiar, seguro y de baja carga cognitiva.
 
 • IMPACTO: Las pruebas cualitativas demostraron que la predictibilidad eliminó el pánico pre-pago en comercios. Se validó que en productos financieros masivos, la familiaridad es el factor clave para la verdadera inclusión digital.`,
-    
-    en: `• OVERVIEW: High learning curve due to an inconsistent interface that caused confusion and anxiety during real-world use (e.g., supermarket checkout), heavily impacting older adults.
+
+          en: `• OVERVIEW: High learning curve due to an inconsistent interface that caused confusion and anxiety during real-world use (e.g., supermarket checkout), heavily impacting older adults.
 
 • THE CHALLENGE: Restructure the information architecture and optimize micro-copy under tight operational constraints, balancing the identity-card-based model with established digital wallet habits.
 
@@ -204,7 +206,8 @@ export const portfolioData: Category[] = [
         icon: TbBusStop,
         url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
-          { es: `• OVERVIEW: Los usuarios no frecuentes de transporte público carecen de información confiable ante imprevistos en la calle, enfrentando interfaces saturadas de publicidad o datos inexactos.
+        {
+          es: `• OVERVIEW: Los usuarios no frecuentes de transporte público carecen de información confiable ante imprevistos en la calle, enfrentando interfaces saturadas de publicidad o datos inexactos.
 
 • EL DESAFÍO: Contener el alcance del producto dentro de límites viables. Se resistió la tentación de sumar pagos o rastreo en tiempo real sobre el mapa para priorizar el foco principal: la orientación inmediata del pasajero en apuros.
 
@@ -216,8 +219,8 @@ export const portfolioData: Category[] = [
 • LA SOLUCIÓN: Un asistente de navegación secuencial y guiado que reemplaza la búsqueda libre por un flujo asistido. Provee solo los datos necesarios para el tramo actual, acelerando la toma de decisiones en la vía pública.
 
 • IMPACTO: Los testeos demostraron asimilación inmediata al heredar patrones visuales de apps de delivery y transporte. Se validó que la claridad informativa en momentos de estrés vale más que un listado extenso de funciones difíciles de programar.`,
-    
-    en: `• OVERVIEW: Infrequent public transit users lack reliable real-time info during roadside updates, often facing ad-heavy interfaces or inaccurate data.
+
+          en: `• OVERVIEW: Infrequent public transit users lack reliable real-time info during roadside updates, often facing ad-heavy interfaces or inaccurate data.
 
 • THE CHALLENGE: Keep the product scope strictly within viable development limits, resisting the urge to add ticket payments or complex live tracking to keep the focus on immediate route guidance.
 
@@ -236,7 +239,8 @@ export const portfolioData: Category[] = [
         icon: TbShirt,
         url: "https://www.figma.com/proto/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-566&t=JIDwm4boP5wSgSf5-1&scaling=contain&content-scaling=fixed&page-id=137%3A102",
         description:
-          { es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
+        {
+          es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
 
 • EL DESAFÍO: Garantizar transacciones seguras entre desconocidos a costo cero. Al descartar envíos y pasarelas de pago por viabilidad económica, el diseño debió asumir la responsabilidad total de mitigar la desconfianza del encuentro presencial.
 
@@ -248,8 +252,8 @@ export const portfolioData: Category[] = [
 • LA SOLUCIÓN: Una plataforma de catálogo curado donde la arquitectura de la información antepone la identidad y confiabilidad del ofertante por sobre la ficha técnica de la ropa, habilitando un contacto seguro fuera de la app.
 
 • IMPACTO: Los testeos demostraron que visibilizar agresivamente las reseñas neutralizó el miedo a coordinar encuentros físicos en la ciudad. Se aprendió que, al remover funciones como el envío, el diseño debe sobrecompensar la seguridad mediante transparencia visual para hacer sostenible el modelo.`,
-    
-    en: `• OVERVIEW: College students on tight budgets rely on physical thrift markets, but limited time and volatile weather break the experience. Designed a local circular fashion platform that digitizes the market dynamic without traditional marketplace fees.
+
+          en: `• OVERVIEW: College students on tight budgets rely on physical thrift markets, but limited time and volatile weather break the experience. Designed a local circular fashion platform that digitizes the market dynamic without traditional marketplace fees.
 
 • THE CHALLENGE: Ensure safe peer-to-peer transactions locally at zero cost. By ruling out integrated shipping and payment gateways for affordability, the UI design had to take full responsibility for mitigating meetup anxiety.
 
