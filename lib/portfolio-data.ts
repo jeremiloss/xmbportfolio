@@ -243,7 +243,7 @@ export const portfolioData: Category[] = [
         label: { es: "PilchaGO", en: "PilchaGO" },
         icon: TbShirt,
         url: "https://www.figma.com/proto/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-566&t=JIDwm4boP5wSgSf5-1&scaling=contain&content-scaling=fixed&page-id=137%3A102",
-         buttonText: { es: "Ver presentación", en: "View Presentation" },
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
         {
           es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
@@ -277,7 +277,7 @@ export const portfolioData: Category[] = [
         label: { es: "TCC:Trading Card Center", en: "TCC:Trading Card Center" },
         icon: TbCards,
         url: "https://www.figma.com/design/yiuEfQ2ZfLQMjOfVXy2Xjp/TCC--Trading-Card-Center-?t=lmmZ0zHxMpgVmbWu-1",
-         buttonText: { es: "Ver presentación", en: "View Presentation" },
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
           { es: "Trading Card Center (TCC) es una plataforma móvil conceptual diseñada para revolucionar el intercambio en las comunidades de juegos de cartas coleccionables (TCG). El producto fusiona la inmediatez de las mecánicas de emparejamiento bidireccional ('matching') con la robustez de un marketplace especializado. El prototipo en Figma despliega flujos optimizados de carga de inventario personal, sistemas de búsqueda avanzada por rareza o edición, y un motor de 'match' inteligente que conecta automáticamente a usuarios con intereses de canje mutuos, transformando el comercio de nicho en una experiencia lúdica, segura y eficiente.", en: "Trading Card Center (TCC) is a conceptual mobile app designed to revolutionize how Trading Card Game (TCG) communities swap collectibles. The platform seamlessly merges the rapid interaction pattern of two-way matching mechanics with the structural infrastructure of a specialized marketplace. The Figma prototype features optimized flows for personal inventory logging, advanced database filters based on card rarity or set edition, and a smart match engine that instantly connects collectors with complementary needs, turning niche trading into a gamified, safe, and frictionless user journey." },
       },
@@ -285,8 +285,8 @@ export const portfolioData: Category[] = [
         id: "ioma",
         label: { es: "IOMA Digital", en: "IOMA Digital" },
         icon: TbPill,
-        url: "https://www.figma.com/design/iCHG8sRETAd8IccWvgZWK7/Redise%C3%B1o-IOMA-DIGITAL?node-id=0-1&t=TBT0ecfZsStMs0ne-1",
-         buttonText: { es: "Ver presentación", en: "View Presentation" },
+        url: "https://www.figma.com/proto/iCHG8sRETAd8IccWvgZWK7/Redise%C3%B1o-IOMA-DIGITAL?node-id=2308-306&t=edyIuILjaqwRIm2q-1&scaling=contain&content-scaling=fixed&page-id=2308%3A188",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
           { es: "Proyecto conceptual de rediseño para IOMA Digital, la aplicación de la obra social de la provincia de Buenos Aires. Con el foco puesto en la accesibilidad y el diseño inclusivo, el desafío principal fue reestructurar la arquitectura de información para un público intergeneracional. El prototipo en Figma optimiza flujos críticos como la gestión de recetas digitales, autorizaciones de trámites y la credencial obligatoria, reduciendo la fricción visual y el estrés operativo del afiliado en momentos de vulnerabilidad médica.", en: "A conceptual redesign project for IOMA Digital, the primary public healthcare app for the Buenos Aires province. With a strong commitment to accessibility and inclusive design, the main challenge was restructuring the information architecture for an intergenerational user base. The Figma prototype optimizes critical healthcare flows—such as digital prescriptions, medical clearings, and mandatory ID verification—reducing visual friction and user anxiety during medical administrative tasks." },
       },
