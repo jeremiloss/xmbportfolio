@@ -364,6 +364,7 @@ export const portfolioData: Category[] = [
         label: { es: "Correo", en: "Mail" },
         icon: TbMail,
         url: "https://mail.google.com/mail/?view=cm&fs=1&to=jeremiastore2003@gmail.com",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description: { es: "jeremiastore2003@gmail.com", en: "jeremiastore2003@gmail.com" },
       },
       {
@@ -371,6 +372,7 @@ export const portfolioData: Category[] = [
         label: { es: "LinkedIn", en: "LinkedIn" },
         icon: TbBrandLinkedin,
         url: "https://www.linkedin.com/in/jerem%C3%ADas-tor%C3%A9-productdesigner/",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description: { es: "Mi perfil de LinkedIn.", en: "My LinkedIn profile." },
       },
       {
@@ -378,6 +380,7 @@ export const portfolioData: Category[] = [
         label: { es: "Instagram", en: "Instagram" },
         icon: TbBrandInstagram,
         url: "https://www.instagram.com/jereeedisenia/",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description: { es: "Seguime en Instagram", en: "Follow me on Instagram" },
       },
       {
@@ -385,6 +388,7 @@ export const portfolioData: Category[] = [
         label: { es: "X/Twitter", en: "X/Twitter" },
         icon: TbBrandTwitter,
         url: "https://x.com/jereemilos",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description: { es: "Seguime en X.", en: "Follow me on X." },
       },
     ],
