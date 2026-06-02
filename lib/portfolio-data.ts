@@ -68,7 +68,7 @@ export const portfolioData: Category[] = [
         id: "experience",
         label: { es: "Experiencia", en: "Experience" },
         url:"public/Jeremías Toré - CV.pdf",
-        buttonText:{es:"" , en:""},
+        buttonText:{es:"Mirá mi CV" , en:"Check my Resume"},
         icon: TbClock,
         description:
           { es: "Mi enfoque como Product Designer se centra en el ciclo completo del producto (E2E), transformando problemas complejos en interfaces de alta fidelidad, escalables y con un propósito claro. Esta visión estratégica se potencia con mi experiencia en gestión de e-commerce y dirección de arte visual en proyectos independientes, donde aprendí a conectar la estética de marca con la eficiencia operativa del negocio digital. Podés conocer el desglose milimétrico de mis roles anteriores, proyectos comerciales y recomendaciones profesionales visitando mi perfil de LinkedIn o descargando mi CV en los enlaces de abajo.", en: "As a Product Designer, my practice focuses on the complete end-to-end (E2E) lifecycle, transforming complex challenges into high-fidelity, scalable, and purpose-driven interfaces. This strategic approach is backed by my background in e-commerce management and visual art direction for independent brands, where I learned to bridge brand aesthetics with digital business operations. For a detailed breakdown of my past roles, commercial projects, and professional endorsements, feel free to check my LinkedIn profile or download my CV below." },
