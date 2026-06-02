@@ -208,6 +208,7 @@ export const portfolioData: Category[] = [
         id: "bondify",
         label: { es: "Bondify", en: "Bondify" },
         icon: TbBusStop,
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
         {
