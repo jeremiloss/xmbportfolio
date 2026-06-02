@@ -143,7 +143,7 @@ export const portfolioData: Category[] = [
         label: { es: "Amaya Real Estate", en: "Amaya Real Estate" },
         icon: TbBuildingSkyscraper,
         url: "https://amaya.realestate/",
-        buttonText: { es: "", en: "" },
+        buttonText: { es: "Ir a la página", en: "Go to website" },
         description:
         {
           es: `• OVERVIEW: El canal de soporte colapsaba por consultas de datos ocultos en textos extensos. Se reestructuró la visualización para autoabastecer al usuario y liberar la carga operativa.
@@ -174,6 +174,7 @@ export const portfolioData: Category[] = [
         id: "cuentadni",
         label: { es: "Rediseño Cuenta-DNI", en: "Cuenta DNI-Redesign" },
         icon: TbFaceId,
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         url: "https://www.figma.com/proto/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=2313-3881&t=6efakWaMNbZmMWNJ-0&scaling=min-zoom&content-scaling=fixed&page-id=2313%3A3621",
         description:
         {
