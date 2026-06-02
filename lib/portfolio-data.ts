@@ -60,8 +60,6 @@ export const portfolioData: Category[] = [
       {
         id: "about",
         label: { es: "Sobre mi", en: "About Me" },
-        url:"public/Jeremías Toré - CV.pdf",
-        buttonText:{es:"" , en:""},
         icon: TbInfoSquareRounded,
         description:
           { es: "Mi camino empezó en la antropología, pero mi pulso creativo siempre me guio hacia el diseño. En el mundo UX/UI encontré el punto de encuentro perfecto: la amalgama entre el estudio del comportamiento humano y mi pasión por crear. Como Diseñador de Producto, me especializo en experiencias digitales centradas en el usuario, con experiencia punta a punta (E2E) —desde la conceptualización y sistemas de diseño hasta el hand-off técnico— asegurando que cada interfaz tenga un propósito claro.", en: "With a background in Anthropology and a heart for creative problem-solving, I found my sweet spot in UX/UI Design. My practice is where human behavior studies meet digital craftsmanship. As a Product Designer focused on UX, I specialize in building end-to-end experiences—from conceptual research and design systems to seamless technical hand-offs. I don't just design interfaces; I build bridges between people and technology." },
@@ -69,6 +67,8 @@ export const portfolioData: Category[] = [
       {
         id: "experience",
         label: { es: "Experiencia", en: "Experience" },
+        url:"public/Jeremías Toré - CV.pdf",
+        buttonText:{es:"" , en:""},
         icon: TbClock,
         description:
           { es: "Mi enfoque como Product Designer se centra en el ciclo completo del producto (E2E), transformando problemas complejos en interfaces de alta fidelidad, escalables y con un propósito claro. Esta visión estratégica se potencia con mi experiencia en gestión de e-commerce y dirección de arte visual en proyectos independientes, donde aprendí a conectar la estética de marca con la eficiencia operativa del negocio digital. Podés conocer el desglose milimétrico de mis roles anteriores, proyectos comerciales y recomendaciones profesionales visitando mi perfil de LinkedIn o descargando mi CV en los enlaces de abajo.", en: "As a Product Designer, my practice focuses on the complete end-to-end (E2E) lifecycle, transforming complex challenges into high-fidelity, scalable, and purpose-driven interfaces. This strategic approach is backed by my background in e-commerce management and visual art direction for independent brands, where I learned to bridge brand aesthetics with digital business operations. For a detailed breakdown of my past roles, commercial projects, and professional endorsements, feel free to check my LinkedIn profile or download my CV below." },
