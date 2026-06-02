@@ -96,13 +96,6 @@ export const portfolioData: Category[] = [
         description:
           { es: `Syndrita mi eterna compañera y guía, te amo.`, en: `Syndrita my eternal guide and companion, love you 3000` },
       },
-      {
-        id: "databi",
-        label: { es: "Análisis de Datos & BI", en: "Data Analytics & BI" },
-        icon: TbPhoto,
-        description:
-          { es: "Capacitación en Jupi Digital, enfocada en la toma de decisiones de diseño basadas en evidencia. Modelado de datos y analítica para transformar métricas e información de negocio en mejoras de experiencia de usuario cuantitativas y medibles.", en: "Training focused on data-driven design decision-making. Data modeling and analytics to transform business metrics and raw insights into quantitative, measurable improvements in user experience." },
-      },
     ],
   },
   {
