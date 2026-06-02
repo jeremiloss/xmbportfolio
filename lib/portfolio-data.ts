@@ -67,6 +67,8 @@ export const portfolioData: Category[] = [
       {
         id: "experience",
         label: { es: "Experiencia", en: "Experience" },
+        url: "public/Jeremías Toré - CV.pdf",
+        buttonText: { es: "Descargá mi CV", en: "Download my Resume" },
         icon: TbClock,
         description:
           { es: "Mi enfoque como Product Designer se centra en el ciclo completo del producto (E2E), transformando problemas complejos en interfaces de alta fidelidad, escalables y con un propósito claro. Esta visión estratégica se potencia con mi experiencia en gestión de e-commerce y dirección de arte visual en proyectos independientes, donde aprendí a conectar la estética de marca con la eficiencia operativa del negocio digital. Podés conocer el desglose milimétrico de mis roles anteriores, proyectos comerciales y recomendaciones profesionales visitando mi perfil de LinkedIn o descargando mi CV en los enlaces de abajo.", en: "As a Product Designer, my practice focuses on the complete end-to-end (E2E) lifecycle, transforming complex challenges into high-fidelity, scalable, and purpose-driven interfaces. This strategic approach is backed by my background in e-commerce management and visual art direction for independent brands, where I learned to bridge brand aesthetics with digital business operations. For a detailed breakdown of my past roles, commercial projects, and professional endorsements, feel free to check my LinkedIn profile or download my CV below." },
@@ -80,7 +82,7 @@ export const portfolioData: Category[] = [
     items: [
       {
         id: "jerekidpic",
-        label: { es: "351513351", en: "351513351" },
+        label: { es: "Eze y Jere jugando circa 2007", en: "Eze & Jere playing circa 2007" },
         icon: TbPhoto,
         image: "/20260331_234223.jpg",
         description:
@@ -141,6 +143,7 @@ export const portfolioData: Category[] = [
         label: { es: "Amaya Real Estate", en: "Amaya Real Estate" },
         icon: TbBuildingSkyscraper,
         url: "https://amaya.realestate/",
+        buttonText: { es: "Ir a la página", en: "Go to website" },
         description:
         {
           es: `• OVERVIEW: El canal de soporte colapsaba por consultas de datos ocultos en textos extensos. Se reestructuró la visualización para autoabastecer al usuario y liberar la carga operativa.
@@ -171,6 +174,7 @@ export const portfolioData: Category[] = [
         id: "cuentadni",
         label: { es: "Rediseño Cuenta-DNI", en: "Cuenta DNI-Redesign" },
         icon: TbFaceId,
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         url: "https://www.figma.com/proto/JASMjBmeSLXtOCmWsT1LFc/Proyecto-Redise%C3%B1o-Cuenta-DNI---Jerem%C3%ADas-Tor%C3%A9?node-id=2313-3881&t=6efakWaMNbZmMWNJ-0&scaling=min-zoom&content-scaling=fixed&page-id=2313%3A3621",
         description:
         {
@@ -204,6 +208,7 @@ export const portfolioData: Category[] = [
         id: "bondify",
         label: { es: "Bondify", en: "Bondify" },
         icon: TbBusStop,
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         url: "https://www.figma.com/proto/OQl57cx7xMOiVgxxKLUYPf/BONDIFY?node-id=2406-4301&t=CTo92jhIzOaGh97q-1&scaling=contain&content-scaling=fixed&page-id=2406%3A4215",
         description:
         {
@@ -238,6 +243,7 @@ export const portfolioData: Category[] = [
         label: { es: "PilchaGO", en: "PilchaGO" },
         icon: TbShirt,
         url: "https://www.figma.com/proto/kDUsSnsmEH02I8wOr00Rsk/PilchaGO?node-id=137-566&t=JIDwm4boP5wSgSf5-1&scaling=contain&content-scaling=fixed&page-id=137%3A102",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
         {
           es: `• OVERVIEW: Estudiantes universitarios con presupuestos ajustados dependen de ferias americanas presenciales, pero la falta de tiempo y el clima frustran la experiencia. Se diseñó una plataforma local de moda circular que digitaliza la dinámica de feria sin los costos de los marketplaces tradicionales.
@@ -270,7 +276,8 @@ export const portfolioData: Category[] = [
         id: "tcc",
         label: { es: "TCC:Trading Card Center", en: "TCC:Trading Card Center" },
         icon: TbCards,
-        url: "https://www.figma.com/design/yiuEfQ2ZfLQMjOfVXy2Xjp/TCC--Trading-Card-Center-?t=lmmZ0zHxMpgVmbWu-1",
+        url: "https://www.figma.com/proto/yiuEfQ2ZfLQMjOfVXy2Xjp/TCC--Trading-Card-Center-?node-id=2205-2103&p=f&t=nbqcAruj0rIr3Agq-1&scaling=contain&content-scaling=fixed&page-id=2205%3A2026",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
           { es: "Trading Card Center (TCC) es una plataforma móvil conceptual diseñada para revolucionar el intercambio en las comunidades de juegos de cartas coleccionables (TCG). El producto fusiona la inmediatez de las mecánicas de emparejamiento bidireccional ('matching') con la robustez de un marketplace especializado. El prototipo en Figma despliega flujos optimizados de carga de inventario personal, sistemas de búsqueda avanzada por rareza o edición, y un motor de 'match' inteligente que conecta automáticamente a usuarios con intereses de canje mutuos, transformando el comercio de nicho en una experiencia lúdica, segura y eficiente.", en: "Trading Card Center (TCC) is a conceptual mobile app designed to revolutionize how Trading Card Game (TCG) communities swap collectibles. The platform seamlessly merges the rapid interaction pattern of two-way matching mechanics with the structural infrastructure of a specialized marketplace. The Figma prototype features optimized flows for personal inventory logging, advanced database filters based on card rarity or set edition, and a smart match engine that instantly connects collectors with complementary needs, turning niche trading into a gamified, safe, and frictionless user journey." },
       },
@@ -278,7 +285,8 @@ export const portfolioData: Category[] = [
         id: "ioma",
         label: { es: "IOMA Digital", en: "IOMA Digital" },
         icon: TbPill,
-        url: "https://www.figma.com/design/iCHG8sRETAd8IccWvgZWK7/Redise%C3%B1o-IOMA-DIGITAL?node-id=0-1&t=TBT0ecfZsStMs0ne-1",
+        url: "https://www.figma.com/proto/iCHG8sRETAd8IccWvgZWK7/Redise%C3%B1o-IOMA-DIGITAL?node-id=2308-306&t=edyIuILjaqwRIm2q-1&scaling=contain&content-scaling=fixed&page-id=2308%3A188",
+        buttonText: { es: "Ver presentación", en: "View Presentation" },
         description:
           { es: "Proyecto conceptual de rediseño para IOMA Digital, la aplicación de la obra social de la provincia de Buenos Aires. Con el foco puesto en la accesibilidad y el diseño inclusivo, el desafío principal fue reestructurar la arquitectura de información para un público intergeneracional. El prototipo en Figma optimiza flujos críticos como la gestión de recetas digitales, autorizaciones de trámites y la credencial obligatoria, reduciendo la fricción visual y el estrés operativo del afiliado en momentos de vulnerabilidad médica.", en: "A conceptual redesign project for IOMA Digital, the primary public healthcare app for the Buenos Aires province. With a strong commitment to accessibility and inclusive design, the main challenge was restructuring the information architecture for an intergenerational user base. The Figma prototype optimizes critical healthcare flows—such as digital prescriptions, medical clearings, and mandatory ID verification—reducing visual friction and user anxiety during medical administrative tasks." },
       },
@@ -356,6 +364,7 @@ export const portfolioData: Category[] = [
         label: { es: "Correo", en: "Mail" },
         icon: TbMail,
         url: "https://mail.google.com/mail/?view=cm&fs=1&to=jeremiastore2003@gmail.com",
+        buttonText: { es: "Mandame un mail!", en: "Email me!" },
         description: { es: "jeremiastore2003@gmail.com", en: "jeremiastore2003@gmail.com" },
       },
       {
@@ -363,6 +372,7 @@ export const portfolioData: Category[] = [
         label: { es: "LinkedIn", en: "LinkedIn" },
         icon: TbBrandLinkedin,
         url: "https://www.linkedin.com/in/jerem%C3%ADas-tor%C3%A9-productdesigner/",
+        buttonText: { es: "Ir al perfil de LinkedIn", en: "Go to LinkedIn profile" },
         description: { es: "Mi perfil de LinkedIn.", en: "My LinkedIn profile." },
       },
       {
@@ -370,6 +380,7 @@ export const portfolioData: Category[] = [
         label: { es: "Instagram", en: "Instagram" },
         icon: TbBrandInstagram,
         url: "https://www.instagram.com/jereeedisenia/",
+        buttonText: { es: "Ir al perfil de Instagram", en: "Go to Instagram profile" },
         description: { es: "Seguime en Instagram", en: "Follow me on Instagram" },
       },
       {
@@ -377,6 +388,7 @@ export const portfolioData: Category[] = [
         label: { es: "X/Twitter", en: "X/Twitter" },
         icon: TbBrandTwitter,
         url: "https://x.com/jereemilos",
+        buttonText: { es: "Ir al perfil de X", en: "Go to X profile" },
         description: { es: "Seguime en X.", en: "Follow me on X." },
       },
     ],

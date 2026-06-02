@@ -50,9 +50,8 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
 
           <motion.div
             /* 🛠️ MAGIA ACÁ: Si tiene imagen, el panel se ensancha a 550px con una transición suave */
-            className={`fixed top-0 right-0 h-full z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl touch-pan-y ${
-              item.image ? "w-[550px]" : "w-[400px]"
-            } max-w-[90vw]`}
+            className={`fixed top-0 right-0 h-full z-50 bg-white/5 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl touch-pan-y ${item.image ? "w-[550px]" : "w-[400px]"
+              } max-w-[90vw]`}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -63,7 +62,7 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
             onDragEnd={handlePanEnd}
           >
             <div className="h-full overflow-y-auto custom-scrollbar p-10 flex flex-col">
-              
+
               {/* Botón Cerrar */}
               <button onClick={onClose} className="ml-auto mb-10 p-2 hover:bg-white/10 rounded-full transition-colors">
                 <X className="w-6 h-6 text-white/50" />
@@ -118,10 +117,13 @@ export function DetailPanel({ item, categoryLabel, isOpen, onClose, lang, onColo
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    /* 🛠️ TRUCO DE ORO: Si la URL termina en .pdf, le clava el atributo download para que lo baje de una */
+                    download={item.url.endsWith('.pdf') ? item.url.split('/').pop() : undefined}
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 text-sm font-medium tracking-wide text-white transition-all group w-full sm:w-auto shadow-[0_4px_12px_rgba(0,0,0,0.1)]"
                   >
                     <span>
-                      {lang === 'es' ? 'Chequealo' : 'Take a look'}
+                      {/* 🛠️ Si el item tiene un texto de botón propio lo usa, si no, usa el clásico */}
+                      {item.buttonText ? item.buttonText[lang] : (lang === 'es' ? 'Chequealo' : 'Take a look')}
                     </span>
                     <span className="transform group-hover:translate-x-1 transition-transform duration-200">
                       →
