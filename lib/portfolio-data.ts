@@ -82,7 +82,7 @@ export const portfolioData: Category[] = [
     items: [
       {
         id: "jerekidpic",
-        label: { es: "Eze y Jere jugando circa 2007", en: "Eze & Jere playing circa 2007" },
+        label: { es: "IMG_0x7F4A_DECRYPTED", en: "DSC_0914_RAW_FINAL.tiff" },
         icon: TbPhoto,
         image: "/20260331_234223.jpg",
         description:
