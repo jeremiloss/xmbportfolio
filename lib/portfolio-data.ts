@@ -380,7 +380,7 @@ export const portfolioData: Category[] = [
         label: { es: "Instagram", en: "Instagram" },
         icon: TbBrandInstagram,
         url: "https://www.instagram.com/jereeedisenia/",
-        buttonText: { es: "Ver presentación", en: "View Presentation" },
+        buttonText: { es: "Ir al perfil de Instagram", en: "Go to Instagram profile" },
         description: { es: "Seguime en Instagram", en: "Follow me on Instagram" },
       },
       {
@@ -388,7 +388,7 @@ export const portfolioData: Category[] = [
         label: { es: "X/Twitter", en: "X/Twitter" },
         icon: TbBrandTwitter,
         url: "https://x.com/jereemilos",
-        buttonText: { es: "Ver presentación", en: "View Presentation" },
+        buttonText: { es: "Ir al perfil de X", en: "Go to X profile" },
         description: { es: "Seguime en X.", en: "Follow me on X." },
       },
     ],
