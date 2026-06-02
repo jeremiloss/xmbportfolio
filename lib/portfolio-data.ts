@@ -82,7 +82,7 @@ export const portfolioData: Category[] = [
     items: [
       {
         id: "jerekidpic",
-        label: { es: "IMG_0x7F4A_E&JPCFr1k15_DECRYPTED", en: "DSC_0914_RAW_FINAL.tiff" },
+        label: { es: "Primeros Pasos", en: "First Steps" },
         icon: TbPhoto,
         image: "/20260331_234223.jpg",
         description:
