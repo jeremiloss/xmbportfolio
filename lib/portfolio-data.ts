@@ -61,7 +61,7 @@ export const portfolioData: Category[] = [
         id: "about",
         label: { es: "Sobre mi", en: "About Me" },
         url:"public/Jeremías Toré - CV.pdf",
-        buttonText:{""},
+        buttonText:{es:"" , en:""},
         icon: TbInfoSquareRounded,
         description:
           { es: "Mi camino empezó en la antropología, pero mi pulso creativo siempre me guio hacia el diseño. En el mundo UX/UI encontré el punto de encuentro perfecto: la amalgama entre el estudio del comportamiento humano y mi pasión por crear. Como Diseñador de Producto, me especializo en experiencias digitales centradas en el usuario, con experiencia punta a punta (E2E) —desde la conceptualización y sistemas de diseño hasta el hand-off técnico— asegurando que cada interfaz tenga un propósito claro.", en: "With a background in Anthropology and a heart for creative problem-solving, I found my sweet spot in UX/UI Design. My practice is where human behavior studies meet digital craftsmanship. As a Product Designer focused on UX, I specialize in building end-to-end experiences—from conceptual research and design systems to seamless technical hand-offs. I don't just design interfaces; I build bridges between people and technology." },
